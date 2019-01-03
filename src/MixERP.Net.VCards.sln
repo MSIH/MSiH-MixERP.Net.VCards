@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{249623F7-9735-4121-AD2E-2BE58C115905}"
 EndProject
@@ -10,9 +10,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MixERP.Net.VCards", "MixERP.Net.VCards\MixERP.Net.VCards.xproj", "{764D0771-F9C1-49F4-9897-8BBD28942A43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MixERP.Net.VCards", "MixERP.Net.VCards\MixERP.Net.VCards.csproj", "{764D0771-F9C1-49F4-9897-8BBD28942A43}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MixERP.Net.VCards.UI", "MixERP.Net.VCards.UI\MixERP.Net.VCards.UI.xproj", "{B268507A-08ED-4E62-99C9-91DC0C5C0E4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MixERP.Net.VCards.UI", "MixERP.Net.VCards.UI\MixERP.Net.VCards.UI.csproj", "{B268507A-08ED-4E62-99C9-91DC0C5C0E4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,5 +35,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{764D0771-F9C1-49F4-9897-8BBD28942A43} = {249623F7-9735-4121-AD2E-2BE58C115905}
 		{B268507A-08ED-4E62-99C9-91DC0C5C0E4B} = {249623F7-9735-4121-AD2E-2BE58C115905}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52E3E8CF-4EE7-4E98-9911-593157A89394}
 	EndGlobalSection
 EndGlobal
