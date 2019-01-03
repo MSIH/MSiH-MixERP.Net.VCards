@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <Description>VCards is a cross-platform, standard-compliant, lightweight, and forgiving vCard parser written in C# which supports parsing and serializing vCards.</Description>
-    <VersionPrefix>1.0.0</VersionPrefix>
-    <TargetFrameworks>net461;net46;net45;net40;netstandard1.3;netstandard1.4;netstandard1.5;netstandard1.6</TargetFrameworks>
+    <VersionPrefix>1.0.1</VersionPrefix>
+    <TargetFrameworks>netstandard1.3</TargetFrameworks>
     <AssemblyName>Hali4831.MixERP.Net.VCards</AssemblyName>
     <PackageId>Hali4831.MixERP.Net.VCards</PackageId>
     <PackageTags>vcard;vcf;mixerp;netcore;osx;linux</PackageTags>
@@ -13,26 +13,6 @@
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
   </PropertyGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
-    <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net46' ">
-    <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
-    <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net40' ">
-    <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
 
   <Target Name="PostcompileScript" AfterTargets="Build" Condition=" '$(IsCrossTargetingBuild)' != 'true' ">
     <Exec Command="dotnet pack --no-build --configuration $(Configuration)" />
