@@ -304,5 +304,7 @@ namespace MixERP.Net.VCards
         #endregion
 
         public IEnumerable<CustomExtension> CustomExtensions { get; set; }
+
+        public string SerializedCard { get; set; }
     }
 }

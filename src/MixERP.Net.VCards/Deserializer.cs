@@ -10,7 +10,10 @@ namespace MixERP.Net.VCards
     {
         public static VCard GetVCard(string contents)
         {
-            var vcard = new VCard();
+            var vcard = new VCard()
+            {
+                SerializedCard = contents
+            };
 
             if (string.IsNullOrWhiteSpace(contents) || !contents.TrimStart().StartsWith("BEGIN:VCARD") || !contents.TrimEnd().EndsWith("END:VCARD"))
             {

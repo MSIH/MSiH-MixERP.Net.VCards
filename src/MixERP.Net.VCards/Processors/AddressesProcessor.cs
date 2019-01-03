@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using MixERP.Net.VCards.Extensions;
 using MixERP.Net.VCards.Lookups;
 using MixERP.Net.VCards.Models;
@@ -81,7 +82,7 @@ namespace MixERP.Net.VCards.Processors
                 var timezone = token.AdditionalKeyMembers.FirstOrDefault(x => x.Key == "TZ");
                 address.TimeZone = TimeZoneInfoProcessor.FromVCardValue(timezone.Value);
             }
-
+            
             if (token.Values.Length > 0)
             {
                 address.PoBox = token.Values[0];
@@ -115,6 +116,47 @@ namespace MixERP.Net.VCards.Processors
             if (token.Values.Length > 6)
             {
                 address.Country = token.Values[6];
+            }
+
+            // fix issues deseralizing Non-US Addresses
+            if (vcard.Version == VCardVersion.V2_1 && vcard.SerializedCard != null)
+            {
+                Match match = Regex.Match(vcard.SerializedCard,
+                    "ADR;WORK;PREF(;ENCODING=QUOTED-PRINTABLE)?:;;(?<address>.*)LABEL;WORK;PREF;",
+                    RegexOptions.Singleline);
+                if (match.Success)
+                {
+                    // clean the string
+                    string adrstring = match.Groups["address"].Value;
+                    adrstring = adrstring.Replace("=0D=0A=", ";")
+                        .Replace("\r\n", ";").Replace("\r", ";").Replace("\n", ";");
+                    var newtokens = adrstring.Split(';').Where(x => !string.IsNullOrEmpty(x)).ToArray();
+                    // interpret depending on token count
+                    if (newtokens.Length == 4)
+                    {
+                        address.Street = newtokens[0];
+                        address.Locality = newtokens[1];
+                        address.PostalCode = newtokens[2];
+                        address.Region = newtokens[3];
+                        address.Country = address.Region;
+                    }
+                    else if (newtokens.Length == 5)
+                    {
+                        address.Street = newtokens[0];
+                        address.Locality = newtokens[1];
+                        address.Region = newtokens[2];
+                        address.PostalCode = newtokens[3];
+                        address.Country = newtokens[4];
+                    }
+                    else if (newtokens.Length == 6)
+                    {
+                        address.Street = newtokens[0] + ", " + newtokens[1];
+                        address.Locality = newtokens[2];
+                        address.Region = newtokens[3];
+                        address.PostalCode = newtokens[4];
+                        address.Country = newtokens[5];
+                    }
+                }
             }
 
             var addresses = (List<Address>) vcard.Addresses ?? new List<Address>();
