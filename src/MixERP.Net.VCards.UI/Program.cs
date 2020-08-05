@@ -36,6 +36,7 @@ namespace MixERP.Net.VCards.UI
             Console.WriteLine("Reading sample vcards.");
 
             ReadSampleCards();
+            ReadCardWithMultiplePhoneTypes();
             Console.ReadLine();
         }
 
@@ -49,7 +50,21 @@ namespace MixERP.Net.VCards.UI
             var vcards = Deserializer.Deserialize(path).ToList();
 
             watch.Stop();
-            string elapsedTime = (watch.ElapsedMilliseconds / 600.00).ToString("N2");
+            string elapsedTime = (watch.ElapsedMilliseconds / 1000.0).ToString("N2");
+            Console.WriteLine($"Parsed {vcards.Count} vcards in {elapsedTime} seconds.");
+        }
+
+        private static void ReadCardWithMultiplePhoneTypes()
+        {
+            string root = AppContext.BaseDirectory;
+            string path = Path.Combine(root, "../../../multi-phone-type-test.vcf");
+
+            var watch = System.Diagnostics.Stopwatch.StartNew();
+
+            var vcards = Deserializer.Deserialize(path).ToList();
+
+            watch.Stop();
+            string elapsedTime = (watch.ElapsedMilliseconds / 1000.0).ToString("N2");
             Console.WriteLine($"Parsed {vcards.Count} vcards in {elapsedTime} seconds.");
         }
 

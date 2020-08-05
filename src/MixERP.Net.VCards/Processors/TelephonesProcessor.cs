@@ -55,8 +55,13 @@ namespace MixERP.Net.VCards.Processors
             var preference = token.AdditionalKeyMembers.FirstOrDefault(x => x.Key == "PREF");
             var type = token.AdditionalKeyMembers.FirstOrDefault(x => x.Key == "TYPE");
 
+            if (type.Key == null)
+            {
+                type = token.AdditionalKeyMembers.FirstOrDefault(x => x.Key != "PREF");
+            }
+
             telephone.Preference = preference.Value.ConvertTo<int>();
-            telephone.Type = TelephoneTypeLookup.Parse(type.Value);
+            telephone.Type = TelephoneTypeLookup.Parse(type.Value != "" ? type.Value : type.Key);
             telephone.Number = token.Values[0];
 
             var telephones = (List<Telephone>) vcard.Telephones ?? new List<Telephone>();
