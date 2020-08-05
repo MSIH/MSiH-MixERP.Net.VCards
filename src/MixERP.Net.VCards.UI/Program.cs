@@ -50,7 +50,7 @@ namespace MixERP.Net.VCards.UI
             var vcards = Deserializer.Deserialize(path).ToList();
 
             watch.Stop();
-            string elapsedTime = (watch.ElapsedMilliseconds / 600.00).ToString("N2");
+            string elapsedTime = (watch.ElapsedMilliseconds / 1000.0).ToString("N2");
             Console.WriteLine($"Parsed {vcards.Count} vcards in {elapsedTime} seconds.");
         }
 
@@ -64,7 +64,7 @@ namespace MixERP.Net.VCards.UI
             var vcards = Deserializer.Deserialize(path).ToList();
 
             watch.Stop();
-            string elapsedTime = (watch.ElapsedMilliseconds / 600.00).ToString("N2");
+            string elapsedTime = (watch.ElapsedMilliseconds / 1000.0).ToString("N2");
             Console.WriteLine($"Parsed {vcards.Count} vcards in {elapsedTime} seconds.");
         }
 
