@@ -4,10 +4,10 @@
     <Description>VCards is a cross-platform, standard-compliant, lightweight, and forgiving vCard parser written in C# which supports parsing and serializing vCards.</Description>
     <VersionPrefix>1.0.1</VersionPrefix>
     <TargetFrameworks>netstandard1.3</TargetFrameworks>
-    <AssemblyName>Hali4831.MixERP.Net.VCards</AssemblyName>
+    <AssemblyName>MSiH.MixERP.Net.VCards</AssemblyName>
     <PackageId>Hali4831.MixERP.Net.VCards</PackageId>
     <PackageTags>vcard;vcf;mixerp;netcore;osx;linux</PackageTags>
-    <PackageProjectUrl>https://github.com/hali4831/MixERP.Net.VCards</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/MSIH/MSiH-MixERP.Net.VCards</PackageProjectUrl>
     <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>

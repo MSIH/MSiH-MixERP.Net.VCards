@@ -11,7 +11,7 @@ namespace MixERP.Net.VCards.Processors
     {
         public static string Serialize(VCard vcard)
         {
-            if(vcard.Url == null)
+            if (vcard.Url == null)
             {
                 return string.Empty;
             }
@@ -33,7 +33,7 @@ namespace MixERP.Net.VCards.Processors
 
             foreach (var uri in uris)
             {
-                if(uri == null)
+                if (uri == null)
                 {
                     continue;
                 }
@@ -53,17 +53,17 @@ namespace MixERP.Net.VCards.Processors
         public static void Parse(Token token, ref VCard vcard)
         {
             string url = token.Values[0];
-            if (!string.IsNullOrWhiteSpace(url))
-            {               
+            if (!string.IsNullOrWhiteSpace(url) && Uri.IsWellFormedUriString(url, UriKind.RelativeOrAbsolute))
+            {
                 try
                 {
                     vcard.Url = new Uri(url, UriKind.RelativeOrAbsolute);
-                // Use the uri
+                    // Use the uri
                 }
                 catch (UriFormatException ex)
                 {
                     Console.WriteLine("UriFormatException: " + ex.Message);
-                }        
+                }
             }
         }
     }
