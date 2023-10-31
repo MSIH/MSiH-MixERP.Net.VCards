@@ -54,8 +54,16 @@ namespace MixERP.Net.VCards.Processors
         {
             string url = token.Values[0];
             if (!string.IsNullOrWhiteSpace(url))
-            {
-                vcard.Url = new Uri(url, UriKind.RelativeOrAbsolute);
+            {               
+                try
+                {
+                    vcard.Url = new Uri(url, UriKind.RelativeOrAbsolute);
+                // Use the uri
+                }
+                catch (UriFormatException ex)
+                {
+                    Console.WriteLine("UriFormatException: " + ex.Message);
+                }        
             }
         }
     }
