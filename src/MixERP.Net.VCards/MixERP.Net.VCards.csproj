@@ -5,13 +5,18 @@
     <VersionPrefix>1.0.1</VersionPrefix>
     <TargetFrameworks>netstandard1.3</TargetFrameworks>
     <AssemblyName>MSiH.MixERP.Net.VCards</AssemblyName>
-    <PackageId>Hali4831.MixERP.Net.VCards</PackageId>
+    <PackageId>MSiH.MixERP.Net.VCards</PackageId>
     <PackageTags>vcard;vcf;mixerp;netcore;osx;linux</PackageTags>
     <PackageProjectUrl>https://github.com/MSIH/MSiH-MixERP.Net.VCards</PackageProjectUrl>
     <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>MSiH MixERP.Net.VCards</Title>
+    <RepositoryUrl>https://github.com/MSIH/MSiH-MixERP.Net.VCards</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>Fixed malformed URI</PackageReleaseNotes>
   </PropertyGroup>
 
   <Target Name="PostcompileScript" AfterTargets="Build" Condition=" '$(IsCrossTargetingBuild)' != 'true' ">
