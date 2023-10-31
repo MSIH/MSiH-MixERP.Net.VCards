@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using MixERP.Net.VCards.Extensions;
-using MixERP.Net.VCards.Models;
 using System.Text.RegularExpressions;
 using System.Linq;
 
@@ -40,9 +38,16 @@ namespace MixERP.Net.VCards.Parser
                 {
                     value = splitted[1].Trim('"').Trim('\'');
                 }
+
                 if (!members.ContainsKey(key))
                 {
                     members.Add(key, value);
+                }
+
+                // hack for preference
+                if (value == "PREF" && !members.ContainsKey("PREF"))
+                {
+                    members.Add("PREF", "1");
                 }
             }
 
