@@ -6,7 +6,10 @@ namespace MixERP.Net.VCards.Helpers
     {
         public static string[] SplitCards(string contents)
         {
-            return Regex.Split(contents, "((BEGIN:VCARD)(.*)(END:VCARD))");
+            //  return Regex.Split(contents, "((BEGIN:VCARD)(.*)(END:VCARD))");
+
+            string[] vcardEntries = Regex.Split(contents, @"(?<=END:VCARD)\s*\n*");
+            return vcardEntries;
         }
     }
 }
