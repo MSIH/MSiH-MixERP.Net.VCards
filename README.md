@@ -6,12 +6,16 @@ VCards is a standard-compliant, lightweight, and forgiving vCard parser written 
 - Version 3.0
 - Version 4.0
 
+# Change Log
+- Fix splitting group vCard file
+- Fix adding type=pref to token
+
 ## How to Use this Library?
 
 **Download Nuget Package**
 
 ```nuget
-Install-Package MixERP.Net.VCards
+Install-Package MSIH-MixERP.Net.VCards
 ```
 
 **Create a vCard**
