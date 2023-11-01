@@ -9,6 +9,7 @@ VCards is a standard-compliant, lightweight, and forgiving vCard parser written 
 # Change Log
 - Fix splitting group vCard file
 - Fix adding type=pref to token
+- Fix exception with malformed URI
 
 ## How to Use this Library?
 
