@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>VCards is a cross-platform, standard-compliant, lightweight, and forgiving vCard parser written in C# which supports parsing and serializing vCards.</Description>
+    <VersionPrefix>1.0.1</VersionPrefix>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <AssemblyName>MSiH.MixERP.Net.VCards</AssemblyName>
+    <PackageId>MSiH.MixERP.Net.VCards</PackageId>
+    <PackageTags>vcard;vcf;mixerp;netcore;osx;linux</PackageTags>
+    <PackageProjectUrl>https://github.com/MSIH/MSiH-MixERP.Net.VCards</PackageProjectUrl>
+    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>MSiH MixERP.Net.VCards</Title>
+    <RepositoryUrl>https://github.com/MSIH/MSiH-MixERP.Net.VCards</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>Fixed malformed URI</PackageReleaseNotes>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <Target Name="PostcompileScript" AfterTargets="Build" Condition=" '$(IsCrossTargetingBuild)' != 'true' ">
+    <Exec Command="dotnet pack --no-build --configuration $(Configuration)" />
+  </Target>
+
+</Project>
