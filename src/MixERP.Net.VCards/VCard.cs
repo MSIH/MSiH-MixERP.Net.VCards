@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using MixERP.Net.VCards.Models;
-using MixERP.Net.VCards.Types;
+using MSiH.MixERP.Net.VCards.Models;
+using MSiH.MixERP.Net.VCards.Types;
 
-namespace MixERP.Net.VCards
+namespace MSiH.MixERP.Net.VCards
 {
     public class VCard
     {

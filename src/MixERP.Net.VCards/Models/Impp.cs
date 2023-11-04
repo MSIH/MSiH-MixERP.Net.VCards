@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MixERP.Net.VCards.Models
+namespace MSiH.MixERP.Net.VCards.Models
 {
     /// <summary>
     ///     Specifies the URI for instant messaging and presence protocol communications with the object the vCard represents.

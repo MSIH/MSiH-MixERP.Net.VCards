@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text;
 
-namespace MixERP.Net.VCards.Serializer
+namespace MSiH.MixERP.Net.VCards.Serializer
 {
     public static class VCardCollectionSerializer
     {

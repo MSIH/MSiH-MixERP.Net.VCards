@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MixERP.Net.VCards.Helpers
+namespace MSiH.MixERP.Net.VCards.Helpers
 {
     public static class ImageMimeHelper
     {

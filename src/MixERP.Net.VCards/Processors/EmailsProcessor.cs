@@ -1,8 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using MSiH.MixERP.Net.VCards.Extensions;
+using MSiH.MixERP.Net.VCards.Lookups;
+using MSiH.MixERP.Net.VCards.Models;
+using MSiH.MixERP.Net.VCards.Types;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MixERP.Net.VCards.Processors
+namespace MSiH.MixERP.Net.VCards.Processors
 {
     public static class EmailsProcessor
     {

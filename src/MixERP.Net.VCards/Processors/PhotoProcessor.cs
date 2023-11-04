@@ -1,9 +1,9 @@
 using System;
-using MixERP.Net.VCards.Extensions;
-using MixERP.Net.VCards.Helpers;
-using MixERP.Net.VCards.Models;
+using MSiH.MixERP.Net.VCards.Extensions;
+using MSiH.MixERP.Net.VCards.Helpers;
+using MSiH.MixERP.Net.VCards.Models;
 
-namespace MixERP.Net.VCards.Processors
+namespace MSiH.MixERP.Net.VCards.Processors
 {
     public static class PhotoProcessor
     {

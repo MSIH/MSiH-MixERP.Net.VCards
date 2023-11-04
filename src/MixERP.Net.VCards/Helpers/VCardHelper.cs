@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace MixERP.Net.VCards.Helpers
+namespace MSiH.MixERP.Net.VCards.Helpers
 {
     public static class VCardHelper
     {

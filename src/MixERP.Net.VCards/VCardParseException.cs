@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MixERP.Net.VCards
+namespace MSiH.MixERP.Net.VCards
 {
     class VCardParseException : Exception
     {

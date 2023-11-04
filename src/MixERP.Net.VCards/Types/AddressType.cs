@@ -1,4 +1,4 @@
-﻿namespace MixERP.Net.VCards.Types
+﻿namespace MSiH.MixERP.Net.VCards.Types
 {
     /// <summary>
     ///     This property parameter specifies the sub-types of physical delivery that is associated with the delivery address.

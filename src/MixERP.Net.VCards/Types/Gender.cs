@@ -1,4 +1,4 @@
-﻿namespace MixERP.Net.VCards.Types
+﻿namespace MSiH.MixERP.Net.VCards.Types
 {
     /// <summary>
     /// Specifies the components of the sex and gender identity of the object the vCard represents.

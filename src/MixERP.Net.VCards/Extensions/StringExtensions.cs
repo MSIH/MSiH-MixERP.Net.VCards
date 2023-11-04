@@ -1,4 +1,4 @@
-﻿namespace MixERP.Net.VCards.Extensions
+﻿namespace MSiH.MixERP.Net.VCards.Extensions
 {
     public static class StringExtensions
     {

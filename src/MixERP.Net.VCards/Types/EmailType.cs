@@ -1,4 +1,4 @@
-namespace MixERP.Net.VCards.Types
+namespace MSiH.MixERP.Net.VCards.Types
 {
     /// <summary>
     ///     This property parameter specifies the type of electronic mail address.

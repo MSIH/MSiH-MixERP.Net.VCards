@@ -1,4 +1,4 @@
-namespace MixERP.Net.VCards.Types
+namespace MSiH.MixERP.Net.VCards.Types
 {
     /// <summary>
     ///     Specifies the kind of object the vCard represents.

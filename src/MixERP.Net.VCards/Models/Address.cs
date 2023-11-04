@@ -1,7 +1,7 @@
 ﻿using System;
-using MixERP.Net.VCards.Types;
+using MSiH.MixERP.Net.VCards.Types;
 
-namespace MixERP.Net.VCards.Models
+namespace MSiH.MixERP.Net.VCards.Models
 {
     /// <summary>
     ///     <para>

@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 
-namespace MixERP.Net.VCards.Helpers
+namespace MSiH.MixERP.Net.VCards.Helpers
 {
     public static class FileHelper
     {

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
-using MixERP.Net.VCards.Extensions;
-using MixERP.Net.VCards.Types;
+using MSiH.MixERP.Net.VCards.Extensions;
+using MSiH.MixERP.Net.VCards.Types;
 
-namespace MixERP.Net.VCards.Serializer
+namespace MSiH.MixERP.Net.VCards.Serializer
 {
     public static class DefaultSerializer
     {

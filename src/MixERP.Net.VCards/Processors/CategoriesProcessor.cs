@@ -1,10 +1,10 @@
 using System.Linq;
-using MixERP.Net.VCards.Extensions;
-using MixERP.Net.VCards.Models;
-using MixERP.Net.VCards.Serializer;
-using MixERP.Net.VCards.Types;
+using MSiH.MixERP.Net.VCards.Extensions;
+using MSiH.MixERP.Net.VCards.Models;
+using MSiH.MixERP.Net.VCards.Serializer;
+using MSiH.MixERP.Net.VCards.Types;
 
-namespace MixERP.Net.VCards.Processors
+namespace MSiH.MixERP.Net.VCards.Processors
 {
     public static class CategoriesProcessor
     {

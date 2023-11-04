@@ -1,4 +1,4 @@
-﻿namespace MixERP.Net.VCards.Types
+﻿namespace MSiH.MixERP.Net.VCards.Types
 {
     /// <summary>
     /// See RFC 6350-6.6.6 for more info.

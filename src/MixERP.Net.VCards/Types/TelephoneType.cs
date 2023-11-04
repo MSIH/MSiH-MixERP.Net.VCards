@@ -1,4 +1,4 @@
-namespace MixERP.Net.VCards.Types
+namespace MSiH.MixERP.Net.VCards.Types
 {
     /// <summary>
     /// This property parameter specifies the sub-type of telephone that is associated with the telephone number (e.g., Home, Work, Cellular, Facsimile, Video, Modem, Message Service, or Preferred). One or more sub-type values can be specified for a given telephone number.

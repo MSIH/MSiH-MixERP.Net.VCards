@@ -1,4 +1,4 @@
-﻿namespace MixERP.Net.VCards.Types
+﻿namespace MSiH.MixERP.Net.VCards.Types
 {
     public enum VCardVersion
     {

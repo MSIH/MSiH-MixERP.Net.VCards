@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
-using MixERP.Net.VCards.Helpers;
-using MixERP.Net.VCards.Parser;
+using MSiH.MixERP.Net.VCards.Helpers;
+using MSiH.MixERP.Net.VCards.Parser;
 
-namespace MixERP.Net.VCards
+namespace MSiH.MixERP.Net.VCards
 {
     public static class Deserializer
     {

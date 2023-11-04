@@ -2,8 +2,10 @@
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Linq;
+using MSiH.MixERP.Net.VCards.Models;
+using MSiH.MixERP.Net.VCards.Extensions;
 
-namespace MixERP.Net.VCards.Parser
+namespace MSiH.MixERP.Net.VCards.Parser
 {
     public static class TokenParser
     {

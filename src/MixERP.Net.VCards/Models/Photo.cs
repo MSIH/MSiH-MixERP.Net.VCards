@@ -1,4 +1,4 @@
-﻿namespace MixERP.Net.VCards.Models
+﻿namespace MSiH.MixERP.Net.VCards.Models
 {
     public sealed class Photo
     {

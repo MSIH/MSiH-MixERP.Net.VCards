@@ -1,7 +1,7 @@
 using System.Text;
-using MixERP.Net.VCards.Processors;
+using MSiH.MixERP.Net.VCards.Processors;
 
-namespace MixERP.Net.VCards.Serializer
+namespace MSiH.MixERP.Net.VCards.Serializer
 {
     public static class V3Serializer
     {

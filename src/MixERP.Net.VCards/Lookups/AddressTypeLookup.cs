@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MixERP.Net.VCards.Types;
+using MSiH.MixERP.Net.VCards.Types;
 
-namespace MixERP.Net.VCards.Lookups
+namespace MSiH.MixERP.Net.VCards.Lookups
 {
     public static class AddressTypeLookup
     {

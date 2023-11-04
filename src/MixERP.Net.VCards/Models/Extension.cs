@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MixERP.Net.VCards.Extensions;
+using MSiH.MixERP.Net.VCards.Extensions;
 
-namespace MixERP.Net.VCards.Models
+namespace MSiH.MixERP.Net.VCards.Models
 {
     /// <summary>
     ///     Extended VCard Properties

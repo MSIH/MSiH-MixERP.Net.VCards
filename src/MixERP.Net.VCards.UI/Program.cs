@@ -3,12 +3,12 @@ using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
 using System.Collections.Generic;
-using MixERP.Net.VCards.Models;
-using MixERP.Net.VCards.Serializer;
-using MixERP.Net.VCards.Types;
-using MixERP.Net.VCards.Extensions;
+using MSiH.MixERP.Net.VCards.Models;
+using MSiH.MixERP.Net.VCards.Serializer;
+using MSiH.MixERP.Net.VCards.Types;
+using MSiH.MixERP.Net.VCards.Extensions;
 
-namespace MixERP.Net.VCards.UI
+namespace MSiH.MixERP.Net.VCards.UI
 {
     public class Program
     {

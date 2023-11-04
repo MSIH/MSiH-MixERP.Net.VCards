@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace MixERP.Net.VCards.Models
+namespace MSiH.MixERP.Net.VCards.Models
 {
     /// <summary>
     /// A token is representation of a valid vCard line in .NET.

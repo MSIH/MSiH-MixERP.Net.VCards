@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MixERP.Net.VCards.Extensions
+namespace MSiH.MixERP.Net.VCards.Extensions
 {
     public static class Sanitizer
     {

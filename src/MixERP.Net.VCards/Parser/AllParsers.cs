@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using MixERP.Net.VCards.Models;
-using MixERP.Net.VCards.Processors;
+using MSiH.MixERP.Net.VCards.Models;
+using MSiH.MixERP.Net.VCards.Processors;
 
-namespace MixERP.Net.VCards.Parser
+namespace MSiH.MixERP.Net.VCards.Parser
 {
     public static class AllParsers
     {

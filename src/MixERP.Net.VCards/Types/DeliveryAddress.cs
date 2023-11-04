@@ -1,4 +1,4 @@
-﻿namespace MixERP.Net.VCards.Types
+﻿namespace MSiH.MixERP.Net.VCards.Types
 {
     /// <summary>
     /// Specifies the formatted text corresponding to delivery address of the object the vCard represents.
