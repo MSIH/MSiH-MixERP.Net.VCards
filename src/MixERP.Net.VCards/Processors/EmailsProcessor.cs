@@ -1,4 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using MixERP.Net.VCards.Extensions;
+using MixERP.Net.VCards.Lookups;
+using MixERP.Net.VCards.Models;
+using MixERP.Net.VCards.Types;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 

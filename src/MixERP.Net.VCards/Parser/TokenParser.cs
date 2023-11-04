@@ -2,6 +2,8 @@
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Linq;
+using MixERP.Net.VCards.Models;
+using MixERP.Net.VCards.Extensions;
 
 namespace MixERP.Net.VCards.Parser
 {
