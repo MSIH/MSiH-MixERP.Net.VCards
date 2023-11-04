@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <AssemblyName>Hali4831.MixERP.Net.VCards.UI</AssemblyName>
     <OutputType>Exe</OutputType>
     <PackageId>Hali4831.MixERP.Net.VCards.UI</PackageId>
